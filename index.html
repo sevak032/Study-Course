@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sevak Academy</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+<!-- ================= HEADER ================= -->
+<header class="bg-white shadow-md sticky top-0 z-50">
+
+  <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+    
+    <!-- Logo -->
+    <div class="flex items-center space-x-3">
+      <img src="logo.png" 
+     alt="Sevak Academy Logo" 
+     class="h-16 md:h-12 w-auto transition-all duration-300">
+      <span class="text-xl font-bold text-blue-600 hidden sm:block">
+        Sevak Academy
+      </span>
+    </div>
+
+    <!-- Desktop Menu -->
+    <nav class="hidden md:flex space-x-8 font-medium">
+        <a href="../my portfolio/myPortfolio.html" class="hover:text-blue-600 transition">About me</a>
+      <a href="#ourcourse" class="hover:text-blue-600 transition">Coding</a>
+      <a href="#maths" class="hover:text-blue-600 transition">Math</a>
+      <a href="#os" class="hover:text-blue-600 transition">OS</a>
+      <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+      <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+        Register
+      </a>
+    </nav>
+
+    <!-- Hamburger Icon -->
+    <button id="menuBtn" class="md:hidden text-3xl">
+      ☰
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu"
+       class="md:hidden hidden bg-white border-t">
+
+    <div class="flex flex-col space-y-4 p-6 font-medium">
+      <a href="#" class="hover:text-blue-600">Coding</a>
+      <a href="#" class="hover:text-blue-600">Web Dev</a>
+      <a href="#" class="hover:text-blue-600">Math</a>
+      <a href="#" class="hover:text-blue-600">OS</a>
+      <a href="#" class="bg-blue-600 text-white px-4 py-2 rounded text-center">
+        Register
+      </a>
+    </div>
+
+  </div>
+
+</header>
+<!-- ================= END HEADER ================= -->
+
+
+
+<!-- MAIN CONTENT -->
+
+ <section
+  id="about"
+  class="text-center 
+         bg-gray-50 dark:bg-gray-800 dark:text-white
+         bg-cover bg-center mt-10 "
+  style="background-image: url('f09f6dcf-3c9e-4ede-b9e4-d5ce5eae7b7b.png');"
+>
+  <div class="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-20">
+
+    <!-- Image -->
+    <div class="w-full md:w-1/2 flex justify-center">
+      <img 
+        src="../my portfolio/sevakimgg.png"
+        alt="Sevak Patel"
+        class="w-48 sm:w-60 md:w-72 lg:w-80  object-cover items-end "
+      >
+    </div>
+
+    <!-- Text Content -->
+    <div class="w-full md:w-1/2 text-center md:text-left dark:text-black ">
+      <h1 class="font-bold text-3xl sm:text-4xl lg:text-5xl mb-4">
+        Hi, I'm Sevak Patel
+      </h1>
+
+      <p class="font-medium text-sm sm:text-base lg:text-lg mb-6">
+        Frontend → Backend Developer | Full Stack Enthusiast | Software Engineer |
+        <br class="hidden sm:block">
+        Problem Solver | System Designer
+      </p>
+
+      <a
+        href="#"
+        class="inline-block px-6 py-3
+               bg-black text-white  dark:bg-white dark:text-black dark:border-2 dark:border-black rounded-lg font-medium hover:scale-105 transition"
+      >
+        Download Resume
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- CODING AND DEVELOPMENT SECTION -->
+
+<section id="ourcourse" class="py-16 bg-gray-100">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <!-- Main Heading -->
+    <h2 class="text-4xl font-bold text-center mb-12">
+      Our Courses
+    </h2>
+
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <!-- Coding Section -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300">
+        <h3 class="text-2xl font-bold text-blue-600 mb-6">
+          💻 Programming Courses
+        </h3>
+
+        <ul class="space-y-4 text-lg">
+          <li class="bg-gray-100 px-4 py-3 rounded-lg hover:bg-blue-100 transition">
+            Java (OOP Concepts)
+          </li>
+          <li class="bg-gray-100 px-4 py-3 rounded-lg hover:bg-blue-100 transition">
+            C Programming
+          </li>
+          <li class="bg-gray-100 px-4 py-3 rounded-lg hover:bg-blue-100 transition">
+            C++
+          </li>
+          <li class="bg-gray-100 px-4 py-3 rounded-lg hover:bg-blue-100 transition">
+            Data Structures & Algorithms
+          </li>
+        </ul>
+      </div>
+
+
+
+      <!-- Development Section -->
+      <div class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300">
+        <h3 class="text-2xl font-bold text-green-600 mb-6">
+          🌐 Web Development
+        </h3>
+
+        <h4 class="font-semibold text-lg mb-3">Frontend Development</h4>
+        <ul class="space-y-3 mb-6">
+          <li class="bg-gray-100 px-4 py-3 rounded-lg hover:bg-green-100 transition">HTML</li>
+          <li class="bg-gray-100 px-4 py-3 rounded-lg hover:bg-green-100 transition">CSS</li>
+          <li class="bg-gray-100 px-4 py-3 rounded-lg hover:bg-green-100 transition">Tailwind CSS</li>
+          <li class="bg-gray-100 px-4 py-3 rounded-lg hover:bg-green-100 transition">JavaScript</li>
+        </ul>
+
+        <h4 class="font-semibold text-lg mb-3">Backend Development</h4>
+        <ul class="space-y-3">
+          <li class="bg-gray-100 px-4 py-3 rounded-lg hover:bg-green-100 transition">Node.js</li>
+          <li class="bg-gray-100 px-4 py-3 rounded-lg hover:bg-green-100 transition">Express.js</li>
+          <li class="bg-gray-100 px-4 py-3 rounded-lg hover:bg-green-100 transition">Database (MySQL)</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- MATH COURSE SECTION -->
+
+
+ <div id="maths" class="max-w-6xl mx-auto bg-white shadow-2xl rounded-2xl overflow-hidden">
+  <h1 class="text-3xl font-bold text-center py-6 bg-gradient-to-r from-blue-600 to-indigo-600 text-white">Mathematics Course</h1>
+    <br>
+    <table class="w-full text-left border-collapse">
+      
+      <!-- Table Header -->
+      <thead class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-lg">
+        <tr>
+          <th class="p-5">Unit</th>
+          <th class="p-5">Topics (Click to View)</th>
+          <th class="p-5 text-center">Video Section</th>
+        </tr>
+      </thead>
+
+      <!-- Table Body -->
+      <tbody class="text-gray-700">
+
+        <!-- UNIT 1 -->
+        <tr class="border-b hover:bg-blue-50 transition duration-300">
+          <td class="p-5 font-bold text-blue-600 text-lg">UNIT 1</td>
+          <td class="p-5 space-y-2">
+            <button onclick="openModal('Sets')" class="block hover:text-blue-600">• Sets</button>
+            <button onclick="openModal('Relations')" class="block hover:text-blue-600">• Relations</button>
+            <button onclick="openModal('Functions')" class="block hover:text-blue-600">• Functions</button>
+            <button onclick="openModal('Types of Functions')" class="block hover:text-blue-600">• Types of Functions</button>
+            <button onclick="openModal('Composition of Functions')" class="block hover:text-blue-600">• Composition of Functions</button>
+          </td>
+          <td class="p-5 text-center">
+            <button onclick="window.location.href='maths.html'" class="bg-blue-600 text-white px-6 py-2 rounded-xl shadow-lg hover:bg-blue-700 transition">
+              Watch Videos
+            </button>
+          </td>
+        </tr>
+
+        <!-- UNIT 2 -->
+        <tr class="hover:bg-blue-50 transition duration-300">
+          <td class="p-5 font-bold text-blue-600 text-lg">UNIT 2</td>
+          <td class="p-5 space-y-2">
+            <button onclick="openModal('Matrices')" class="block hover:text-blue-600">• Matrices</button>
+            <button onclick="openModal('Determinants')" class="block hover:text-blue-600">• Determinants</button>
+            <button onclick="openModal('Adjoint & Inverse')" class="block hover:text-blue-600">• Adjoint & Inverse</button>
+          </td>
+          <td class="p-5 text-center">
+            <button onclick="window.location.href='maths.html'" class="bg-blue-600 text-white px-6 py-2 rounded-xl shadow-lg hover:bg-blue-700 transition">
+              Watch Videos
+            </button>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <!-- MODAL -->
+  <div id="modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center">
+    
+    <div class="bg-white w-96 p-6 rounded-2xl shadow-2xl relative animate-scale">
+      
+      <button onclick="closeModal()" 
+        class="absolute top-3 right-3 text-gray-500 hover:text-red-500 text-xl">&times;</button>
+
+      <h2 id="modalTitle" class="text-2xl font-bold text-blue-600 mb-3"></h2>
+      <p id="modalContent" class="text-gray-600"></p>
+
+    </div>
+  </div>
+
+
+   <!-- Animation -->
+  <style>
+    .animate-scale {
+      animation: scaleUp 0.3s ease-in-out;
+    }
+    @keyframes scaleUp {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+  </style>
+
+
+
+<!-- OS SECTION -->
+ <section id="os" class="max-w-6xl mx-auto bg-white shadow-2xl rounded-2xl overflow-hidden mt-10">
+  <h1 class="text-3xl font-bold text-center py-6 bg-gradient-to-r from-blue-600 to-indigo-600 text-white">Operating System Course</h1>
+   <br>
+
+  <table class="w-full text-left border-collapse">
+    
+    <!-- Header -->
+    <thead class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-lg">
+      <tr>
+        <th class="p-5">Unit</th>
+        <th class="p-5">OS Topics (Click to View)</th>
+        <th class="p-5 text-center">Video Section</th>
+      </tr>
+    </thead>
+
+    <tbody class="text-gray-700">
+
+      <!-- OS UNIT -->
+      <tr class="border-b hover:bg-blue-50 transition duration-300">
+        <td class="p-5 font-bold text-blue-600 text-lg">UNIT - OS</td>
+
+        <td class="p-5 space-y-2">
+          <button onclick="openModal2('OS Overview')" class="block hover:text-blue-600">• OS Overview</button>
+          <button onclick="openModal2('Functions of OS')" class="block hover:text-blue-600">• Functions of OS</button>
+          <button onclick="openModal2('Types of OS')" class="block hover:text-blue-600">• Types of OS</button>
+          <button onclick="openModal2('Process Management')" class="block hover:text-blue-600">• Process Management</button>
+          <button onclick="openModal2('Memory Management')" class="block hover:text-blue-600">• Memory Management</button>
+          <button onclick="openModal2('File System')" class="block hover:text-blue-600">• File System</button>
+        </td>
+
+        <td class="p-5 text-center">
+          <button onclick="window.location.href='os.html'" class="bg-blue-600 text-white px-6 py-2 rounded-xl shadow-lg hover:bg-blue-700 transition">
+            Watch Videos
+          </button>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+</section>
+
+<!-- MODAL -->
+<div id="modal2" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center">
+  
+  <div class="bg-white w-96 p-6 rounded-2xl shadow-2xl relative animate-scale">
+    
+    <button onclick="closeModal2()" 
+      class="absolute top-3 right-3 text-gray-500 hover:text-red-500 text-xl">&times;</button>
+
+    <h2 id="modalTitle2" class="text-2xl font-bold text-blue-600 mb-3"></h2>
+    <p id="modalContent2" class="text-gray-600"></p>
+
+  </div>
+</div>
+
+<style>
+  .animate-scale {
+    animation: scaleUp 0.3s ease-in-out;
+  }
+  @keyframes scaleUp {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+</style>
+
+
+<!-- MAIN CONTENT -->
+
+
+
+
+
+<!-- ================= FOOTER ================= -->
+<footer id="contact" class="bg-gray-900 text-white mt-10">
+
+  <div class="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-8">
+
+    <!-- About -->
+    <div>
+      <h2 class="text-xl font-bold mb-4">Sevak Academy</h2>
+      <p class="text-gray-400 text-sm">
+        Structured BCA learning platform with syllabus,
+        notes, video lectures and practice tests.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h2 class="text-xl font-bold mb-4">Quick Links</h2>
+      <ul class="space-y-2 text-gray-400 text-sm">
+        <li><a href="#" class="hover:text-white">Coding</a></li>
+        <li><a href="#" class="hover:text-white">Math</a></li>
+        <li><a href="#" class="hover:text-white">OS</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class=" flex flex-col gap-3">
+      <!-- Call Button -->
+      <a href="tel:7488426912" 
+          class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg transition">
+          📞 Call Me
+      </a>
+
+      <!-- SMS Button -->
+      <a href="sms:7488426912"
+          class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition">
+          💬 Send Message
+      </a>
+
+      <!-- Gmail Button -->
+      <a href="mailto:sevakpatel032@gmail.com"
+          class="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg transition">
+          📧 Send Email
+      </a>
+    </div>
+
+     
+
+  <div class="border-t border-gray-700 text-center py-4 text-sm text-gray-400">
+    © 2026 Sevak Academy | All Rights Reserved
+  </div>
+
+</footer>
+<!-- ================= END FOOTER ================= -->
+
+
+
+
+
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+
+// math section modal functions
+
+ const info1 = {
+      "Sets": "A Set is a well-defined collection of distinct objects. ",
+      "Relations": "A Relation shows the connection between elements of two sets.",
+      "Functions": "A Function maps each input to exactly one output.",
+      "Types of Functions": "Includes One-One, Onto, Many-One, Into functions.",
+      "Composition of Functions": "Combining two functions to form a new function.",
+      "Matrices": "A Matrix is a rectangular arrangement of numbers in rows and columns.",
+      "Determinants": "Determinant is a scalar value derived from a square matrix.",
+      "Adjoint & Inverse": "Used to find inverse of a matrix using determinant.",
+    };
+
+    function openModal(topic) {
+      document.getElementById("modalTitle").innerText = topic;
+      document.getElementById("modalContent").innerText = info1[topic];
+      document.getElementById("modal").classList.remove("hidden");
+      document.getElementById("modal").classList.add("flex");
+    }
+
+    function closeModal() {
+      document.getElementById("modal").classList.add("hidden");
+    }
+
+// os section modal functions
+
+ const info2 = {
+    "OS Overview": "Operating System is system software that manages computer hardware and software resources.",
+    "Functions of OS": "It manages process, memory, files, devices, and security of the system.",
+    "Types of OS": "Batch OS, Time-Sharing OS, Real-Time OS, Distributed OS, and Network OS.",
+    "Process Management": "OS handles creation, scheduling, and termination of processes.",
+    "Memory Management": "OS allocates and deallocates memory space to programs efficiently.",
+    "File System": "OS organizes and manages files stored on storage devices."
+  };
+
+  function openModal2(topic) {
+    document.getElementById("modalTitle2").innerText = topic;
+    document.getElementById("modalContent2").innerText = info2[topic];
+    document.getElementById("modal2").classList.remove("hidden");
+    document.getElementById("modal2").classList.add("flex");
+  }
+
+  function closeModal2() {
+    document.getElementById("modal2").classList.add("hidden");
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sevak Academy - OS Unit 1</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+</head>
+
+<body class="bg-gradient-to-br from-gray-100 to-blue-100 min-h-screen">
+
+<!-- NAVBAR -->
+<header class="bg-white shadow-md sticky top-0 z-50">
+<div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+
+<div class="flex items-center space-x-3">
+<img src="logo.png" class="h-12 w-auto">
+<span class="text-xl font-bold text-blue-600 hidden sm:block">
+Sevak Academy
+</span>
+</div>
+
+<nav class="hidden md:flex space-x-8 font-medium items-center">
+<a href="index.html" class="hover:text-blue-600">Home</a>
+<a href="coding.html" class="hover:text-blue-600">Coding</a>
+<a href="maths.html" class="hover:text-blue-600">Math</a>
+<a href="os.html" class="hover:text-blue-600">OS</a>
+<a href="#" class="bg-blue-600 text-white px-4 py-2 rounded">
+Register
+</a>
+</nav>
+
+<button id="menuBtn" class="md:hidden text-3xl">☰</button>
+</div>
+
+<div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+<div class="flex flex-col space-y-4 p-6 font-medium">
+<a href="#">About</a>
+<a href="#">Coding</a>
+<a href="#">Math</a>
+<a href="#">OS</a>
+<a href="#" class="bg-blue-600 text-white px-4 py-2 rounded text-center">
+Register
+</a>
+</div>
+</div>
+</header>
+
+<h1 class="text-3xl md:text-4xl font-bold text-center mt-8 mb-10 text-gray-800">
+Operating System - Unit 1
+</h1>
+
+<div class="max-w-7xl mx-auto px-4 pb-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div id="cards" class="contents"></div>
+</div>
+</div>
+
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-gray-900 text-white mt-10">
+
+  <div class="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-8">
+
+    <!-- About -->
+    <div>
+      <h2 class="text-xl font-bold mb-4">Sevak Academy</h2>
+      <p class="text-gray-400 text-sm">
+        Structured BCA learning platform with syllabus,
+        notes, video lectures and practice tests.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h2 class="text-xl font-bold mb-4">Quick Links</h2>
+      <ul class="space-y-2 text-gray-400 text-sm">
+        <li><a href="#" class="hover:text-white">Coding</a></li>
+        <li><a href="#" class="hover:text-white">Math</a></li>
+        <li><a href="#" class="hover:text-white">OS</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+   <div class=" flex flex-col gap-3">
+      <!-- Call Button -->
+      <a href="tel:7488426912" 
+          class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg transition">
+          📞 Call Me
+      </a>
+
+      <!-- SMS Button -->
+      <a href="sms:7488426912"
+          class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition">
+          💬 Send Message
+      </a>
+
+      <!-- Gmail Button -->
+      <a href="mailto:sevakpatel032@gmail.com"
+          class="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg transition">
+          📧 Send Email
+      </a>
+    </div>
+
+  </div>
+
+  <div class="border-t border-gray-700 text-center py-4 text-sm text-gray-400">
+    © 2026 Sevak Academy | All Rights Reserved
+  </div>
+
+</footer>
+<!-- ================= END FOOTER ================= -->
+
+<script>
+
+/* NAVBAR */
+document.getElementById("menuBtn").onclick = () => {
+document.getElementById("mobileMenu").classList.toggle("hidden");
+};
+
+/* CARD FUNCTION */
+function createCard(number, title){
+return `
+<div class="bg-white rounded-2xl shadow-xl p-6">
+
+<div class="flex justify-between mb-3">
+<h2 class="text-lg font-semibold">
+Video ${number}: ${title}
+</h2>
+<span id="tick${number}" class="text-gray-400 font-bold">
+⏳ Pending
+</span>
+</div>
+
+<div class="aspect-video w-full rounded-xl overflow-hidden mb-4">
+<div id="player${number}" class="w-full h-full"></div>
+</div>
+
+<button onclick="toggleQuiz('quiz${number}')"
+class="w-full bg-blue-600 text-white py-2 rounded-lg mb-4 hover:bg-blue-700">
+Start Quiz
+</button>
+
+<div id="quiz${number}" class="hidden bg-gray-50 p-4 rounded-xl">
+
+<form id="form${number}">
+${generateQuestions(number)}
+
+<button type="button"
+onclick="submitQuiz(${number})"
+class="bg-green-600 text-white px-6 py-2 rounded mt-4 hover:bg-green-700">
+Submit Quiz
+</button>
+
+<p id="result${number}" class="mt-3 font-bold text-blue-700"></p>
+</form>
+
+</div>
+
+<div class="flex flex-col sm:flex-row gap-3 mt-6">
+<a href="os_notes${number}.pdf"
+class="flex-1 bg-green-500 text-white py-2 text-center rounded-lg hover:bg-green-600 transition">
+Download Notes
+</a>
+
+<a href="os_mcq${number}.pdf"
+class="flex-1 bg-purple-500 text-white py-2 text-center rounded-lg hover:bg-purple-600 transition">
+Download MCQ
+</a>
+</div>
+
+</div>
+`;
+}
+
+/* 10 QUESTIONS */
+function generateQuestions(num){
+let q = "";
+for(let i=1;i<=10;i++){
+q += `
+<div class="mb-4">
+<p class="font-medium">${i}) What is OS?</p>
+<label class="block">
+<input type="radio" name="q${num}_${i}" value="1" data-correct="true">
+System Software
+</label>
+<label class="block">
+<input type="radio" name="q${num}_${i}" value="2">
+Application Software
+</label>
+<label class="block">
+<input type="radio" name="q${num}_${i}" value="3">
+Game Software
+</label>
+</div>
+`;
+}
+return q;
+}
+
+/* INSERT CARDS */
+document.getElementById("cards").innerHTML =
+createCard(1,"Introduction to OS") +
+createCard(2,"Functions of OS") +
+createCard(3,"Types of OS") +
+createCard(4,"Process Management");
+
+/* YOUTUBE */
+let players = {};
+function onYouTubeIframeAPIReady() {
+
+players.player1 = new YT.Player('player1', {
+videoId: '26QPDBe-NB8',
+events: { 'onStateChange': e => checkComplete(e,1) }
+});
+
+players.player2 = new YT.Player('player2', {
+videoId: '26QPDBe-NB8',
+events: { 'onStateChange': e => checkComplete(e,2) }
+});
+
+players.player3 = new YT.Player('player3', {
+videoId: '26QPDBe-NB8',
+events: { 'onStateChange': e => checkComplete(e,3) }
+});
+
+players.player4 = new YT.Player('player4', {
+videoId: '26QPDBe-NB8',
+events: { 'onStateChange': e => checkComplete(e,4) }
+});
+}
+
+function checkComplete(event, number){
+if(event.data === YT.PlayerState.ENDED){
+let tick = document.getElementById("tick"+number);
+tick.innerText = "✔ Completed";
+tick.classList.remove("text-gray-400");
+tick.classList.add("text-green-600");
+}
+}
+
+/* QUIZ */
+function toggleQuiz(id){
+document.getElementById(id).classList.toggle("hidden");
+}
+
+function submitQuiz(num){
+
+let score = 0;
+
+for(let i=1;i<=10;i++){
+let selected = document.querySelector('input[name="q'+num+'_'+i+'"]:checked');
+if(selected && selected.dataset.correct === "true"){
+score++;
+}
+}
+
+document.getElementById("result"+num).innerText =
+"Your Score: " + score + " / 10";
+}
+
+</script>
+
+</body>
+</html>
