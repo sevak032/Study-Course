@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SEVAk Kumar - Frontend Developer Portfolio showcasing web development projects, skills, and contact information. Built using HTML and Tailwind CSS with responsive modern design.">
+    <meta name="keywords" content="SEVAk Kumar, Frontend Developer, Web Developer, Portfolio, Tailwind CSS, HTML, JavaScript">
+    <meta name="author" content="SEVAk Kumar">
+    <title>SEVAk Kumar | Frontend Developer Portfolio</title>
+
+
+    <!-- Tailwind CDN (CORRECT) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Dark mode config -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+</head>
+
+
+
+
+<body class="bg-white dark:bg-gray-900 dark:text-white transition-colors duration-300">
+
+    <!-- NAVBAR -->
+    <nav class="bg-white dark:bg-gray-800 w-full shadow-md fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto flex justify-between items-center py-4 px-3">
+
+            <img class="items-center  w-40 dark:text-white dark:bg-gray-800" src="muportlogi.png" alt="">
+            <!-- <h2 class="text-xl font-bold">MyPortfolio</h2> -->
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex gap-6">
+                <a href="#about"   class="font-medium text-black dark:text-white font-serif">About</a>
+                <a href="#skill"   class="font-medium text-black dark:text-white font-serif">Skill</a>
+                <a href="../TeachingProject/index.html" class="font-medium text-black dark:text-white font-serif">Course</a>
+                <a href="#project" class="font-medium text-black dark:text-white font-serif">Projects</a>
+                <a href="#contact" class="font-medium text-black dark:text-white font-serif">Contact</a>
+            </div>
+
+            <!-- Buttons -->
+            <div class="flex items-center gap-3">
+
+                <!-- Dark Mode Button -->
+                <button
+                    id="darkToggle"
+                    class="border px-2 py-1 rounded-md text-xl
+                           bg-white text-black
+                           dark:bg-gray-700 dark:text-white
+                           transition">
+                    🌙
+                </button>
+
+                <!-- Hamburger -->
+                <button id="hamburger" class="md:hidden text-2xl">
+                    ☰
+                </button>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu"   class="md:hidden hidden fixed top-16 left-0 w-full bg-white dark:bg-gray-800 shadow-md translate-z-56 mt-5">
+        <a href="#about"   class="block p-3 border-b dark:border-gray-700 font-serif">About</a>
+        <a href="#skill"   class="block p-3 border-b dark:border-gray-700 font-serif">Skill</a>
+        <a href="#project" class="block p-3 border-b dark:border-gray-700 font-serif">Projects</a>
+        <a href="#contact" class="block p-3 border-b dark:border-gray-700 font-serif ">Contact</a>
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+
+
+    <!-- ABOUT SECTION  -->
+
+    <section
+  id="about"
+  class="text-center px-4
+         bg-gray-50 dark:bg-gray-800 dark:text-white
+         bg-cover bg-center mt-24 mb-8 "
+  style="background-image: url('f09f6dcf-3c9e-4ede-b9e4-d5ce5eae7b7b.png');"
+>
+  <div class="container mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-20">
+
+    <!-- Image -->
+    <div class="w-full md:w-1/2 flex justify-center">
+      <img 
+        src="sevakimgg.png"
+        alt="Sevak Patel"
+        class="w-48 sm:w-60 md:w-72 lg:w-80  object-cover items-end "
+      >
+    </div>
+
+    <!-- Text Content -->
+    <div class="w-full md:w-1/2 text-center md:text-left dark:text-black ">
+      <h1 class="font-bold text-3xl sm:text-4xl lg:text-5xl mb-4">
+        Hi, I'm Sevak Patel
+      </h1>
+
+      <p class="font-medium text-sm sm:text-base lg:text-lg mb-6">
+        Frontend → Backend Developer | Full Stack Enthusiast | Software Engineer |
+        <br class="hidden sm:block">
+        Problem Solver | System Designer
+      </p>
+
+      <a
+        href="#"
+        class="inline-block px-6 py-3
+               bg-black text-white  dark:bg-white dark:text-black dark:border-2 dark:border-black rounded-lg font-medium hover:scale-105 transition"
+      >
+        Download Resume
+      </a>
+    </div>
+
+  </div>
+</section>
+
+            <!-- SKILL SECTION -->
+
+            <section id="skill" class="   shadow px-4 m-8 ">
+
+                <h1 class="text-2xl font-bold mb-4 p-4 dark:text-white text-center">Skills</h1>
+                <p class="text-center mb-4 ">Transforming ideas into high-performance, responsive web experiences with clean code and modern technologies.</p>
+
+                <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 text-center p-8 ">
+
+                    <div class=" border-2 border-black dark:border-2
+                    dark:border-white rounded-3xl p-2 font-bold dark:hover:bg-amber-300 cursor-pointer"> HTML</div>
+
+                    <div class=" border-2 border-black dark:border-2
+                    dark:border-white rounded-3xl p-2 font-bold dark:hover:bg-amber-300 cursor-pointer">CSS</div>
+
+                    <div class=" border-2 border-black dark:border-2
+                    dark:border-white rounded-3xl p-2 font-bold dark:hover:bg-amber-300 cursor-pointer">Tailwind CSS</div>
+
+                    <div class=" border-2 border-black dark:border-2
+                    dark:border-white rounded-3xl p-2 font-bold dark:hover:bg-amber-300 cursor-pointer">Java Script</div>
+
+                    <div class=" border-2 border-black dark:border-2
+                    dark:border-white rounded-3xl p-2 font-bold dark:hover:bg-amber-300 cursor-pointer">React</div>
+
+                    <div class=" border-2 border-black dark:border-2
+                    dark:border-white rounded-3xl p-2 font-bold dark:hover:bg-amber-300 cursor-pointer">Node.Js</div>
+
+                    <div class=" border-2 border-black dark:border-2
+                    dark:border-white rounded-3xl p-2 font-bold dark:hover:bg-amber-300 cursor-pointer">Express</div>
+
+                    <div class=" border-2 border-black dark:border-2
+                    dark:border-white rounded-3xl p-2 font-bold dark:hover:bg-amber-300 cursor-pointer">MongoDB</div>
+
+                    <div class=" border-2 border-black dark:border-2
+                    dark:border-white rounded-3xl p-2 font-bold dark:hover:bg-amber-300 cursor-pointer">C / C++</div>
+
+                    <div class=" border-2 border-black dark:border-2
+                    dark:border-white rounded-3xl p-2 font-bold dark:hover:bg-amber-300 cursor-pointer">SQL</div>
+
+                    <div class=" border-2 border-black dark:border-2
+                    dark:border-white rounded-3xl p-2 font-bold dark:hover:bg-amber-300 cursor-pointer">Java / DSA </div>
+
+                    <div class=" border-2 border-black dark:border-2
+                    dark:border-white rounded-3xl p-2 font-bold dark:hover:bg-amber-300 cursor-pointer">Generative - AI</div>
+
+                    <div class=" border-2 border-black dark:border-2
+                    dark:border-white rounded-3xl p-2 font-bold dark:hover:bg-amber-300 cursor-pointer">Git / GitHub</div>
+
+                    <div class=" border-2 border-black dark:border-2
+                    dark:border-white rounded-3xl p-2 font-bold dark:hover:bg-amber-300 cursor-pointer">UI / UX </div>
+
+                    <div class=" border-2 border-black dark:border-2
+                    dark:border-white rounded-3xl p-2 font-bold dark:hover:bg-amber-300 cursor-pointer">System Design</div>
+
+                    <div class=" border-2 border-black dark:border-2
+                    dark:border-white rounded-3xl p-2 font-bold dark:hover:bg-amber-300 cursor-pointer">Python</div>
+
+
+
+                </div>
+
+            </section>
+
+
+            <!-- PROJECT SECTION -->
+
+            <section id="project"  class="   shadow px-4 m-8 ">
+                <h1 class="text-2xl font-bold mb-4 p-4 dark:text-white text-center">Projects</h1>
+                <p class="text-center mb-4">Every project here is built with strategy, performance, and results in mind. If you're serious about growing your business online, let's make it happen.</p>
+
+                <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-center p-4 ">
+
+
+                    <!-- project 1( gym website) -->
+                    <div class="border-2 border-black dark:border-white shadow-2xl rounded-2xl p-4 text-left  ">
+                        <h1 class="text-center text-4xl py-2 font-bold font-serif">Project 1</h1>
+
+                        <p class="text-xl py-2 font-semibold text-blue-500 py-2 "> <span class="font-mediu text-black dark:text-white">Website Name :-</span> Gym website</p>
+                        <p class="text-l py-2 font-light mb-1"> <span class="font-medium " >About Website :- </span> Designed a business-focused Gym Website to help gym owners increase memberships, generate daily leads, build brand trust, and create additional revenue streams through online bookings and promotions.</p>
+                        <a href="gym.html" class="text-blue-500 hover:underline text-center w-40 px-4 py-1 border-2 bg-blue-950 dark:border-white rounded-2xl text-white">View Website > </a>
+                    </div>
+
+                    <!-- project 2( Tasty Bite) -->
+                    <div class="border-2 border-black dark:border-white shadow-2xl rounded-2xl p-4 text-left  ">
+                        <h1 class="text-center text-4xl py-2 font-bold font-serif">Project 2</h1>
+
+                        <p class="text-xl py-2 font-semibold text-blue-500 py-2 "> <span class="font-mediu text-black dark:text-white">Website Name :-</span> Tasty Bite</p>
+                        <p class="text-l py-2 font-light mb-1"> <span class="font-medium " >About Website :- </span> Designed a business-focused Tasty Bite Website to help food businesses increase orders, generate daily leads, build brand trust, and create additional revenue streams through online bookings and promotions.</p>
+                        <a href="#" class="text-yellow-500 hover:underline text-center w-40 px-4 py-1 border-2 bg-blue-950 dark:border-white rounded-2xl text-white">View Website > </a>
+                    </div>
+
+
+                    <!-- project 3( ABC School) -->
+                    <div class="border-2 border-black dark:border-white shadow-2xl rounded-2xl p-4 text-left  ">
+                        <h1 class="text-center text-4xl py-2 font-bold font-serif">Project 3</h1>
+
+                        <p class="text-xl py-2 font-semibold text-blue-500 py-2 "> <span class="font-mediu text-black dark:text-white">Website Name :-</span> ABC School</p>
+                        <p class="text-l py-2 font-light mb-1"> <span class="font-medium " >About Website :- </span> Designed a business-focused ABC School Website to help schools increase student enrollment, generate daily leads, build brand trust, and create additional revenue streams through online bookings and promotions.</p>
+                        <a href="#" class="text-blue-950 hover:underline text-center w-40 px-4 py-1 border-2 bg-blue-950 dark:border-white rounded-2xl text-white">View Website > </a>
+                    </div>
+
+
+                    <!-- project 4( ONLINE SHOP) -->
+                    <div class="border-2 border-black dark:border-white shadow-2xl rounded-2xl p-4 text-left  ">
+                        <h1 class="text-center text-4xl py-2 font-bold font-serif">Project 4</h1>
+
+                        <p class="text-xl py-2 font-semibold text-blue-500 py-2 "> <span class="font-mediu text-black dark:text-white">Website Name :-</span> Online Shop</p>
+                        <p class="text-l py-2 font-light mb-1"> <span class="font-medium " >About Website :- </span> Designed a business-focused Online Shop Website to help online retailers increase sales, generate daily leads, build brand trust, and create additional revenue streams through online bookings and promotions.</p>
+                        <a href="#" class="text-green-500 hover:underline text-center w-40 px-4 py-1 border-2 bg-blue-950 dark:border-white rounded-2xl text-white">View Website > </a>
+                    </div>
+
+                    <!-- project 5( HEALTH CARE) -->
+                    <div class="border-2 border-black dark:border-white shadow-2xl rounded-2xl p-4 text-left  ">
+                        <h1 class="text-center text-4xl py-2 font-bold font-serif">Project 5</h1>
+
+                        <p class="text-xl py-2 font-semibold text-blue-500 py-2 "> <span class="font-mediu text-black dark:text-white">Website Name :-</span> Health Care</p>
+                        <p class="text-l py-2 font-light mb-1"> <span class="font-medium " >About Website :- </span> Designed a business-focused Health Care Website to help health care providers increase patient visits, generate daily leads, build brand trust, and create additional revenue streams through online bookings and promotions.</p>
+                        <a href="#" class="text-red-300 hover:underline text-center w-40 px-4 py-1 border-2 bg-blue-950 dark:border-white rounded-2xl text-white">View Website > </a>
+                    </div>
+
+                    <!-- project 6( COZY CAFE) -->
+                    <div class="border-2 border-black dark:border-white shadow-2xl rounded-2xl p-4 text-left  ">
+                        <h1 class="text-center text-4xl py-2 font-bold font-serif">Project 6</h1>
+
+                        <p class="text-xl py-2 font-semibold text-blue-500 py-2 "> <span class="font-mediu text-black dark:text-white">Website Name :-</span> Cozy Cafe</p>
+                        <p class="text-l py-2 font-light mb-1"> <span class="font-medium " >About Website :- </span> Designed a business-focused Cozy Cafe Website to help cafe owners increase customer visits, generate daily leads, build brand trust, and create additional revenue streams through online bookings and promotions.</p>
+                        <a href="#" class="text-shadow-cyan-600 hover:underline text-center w-40 px-4 py-1 border-2 bg-blue-950 dark:border-white rounded-2xl text-white">View Website > </a>
+                    </div>
+
+                    <!-- project 7( COACHING CENTER) -->
+                    <div class="border-2 border-black dark:border-white shadow-2xl rounded-2xl p-4 text-left  ">
+                        <h1 class="text-center text-4xl py-2 font-bold font-serif">Project 7</h1>
+
+                        <p class="text-xl py-2 font-semibold text-blue-500 py-2 "> <span class="font-mediu text-black dark:text-white">Website Name :-</span> Coaching Center</p>
+                        <p class="text-l py-2 font-light mb-1"> <span class="font-medium " >About Website :- </span> Designed a business-focused Coaching Center Website to help coaching centers increase student enrollment, generate daily leads, build brand trust, and create additional revenue streams through online bookings and promotions.</p>
+                        <a href="#" class="text-shadow-emerald-800 hover:underline text-center w-40 px-4 py-1 border-2 bg-blue-950 dark:border-white rounded-2xl text-white">View Website > </a>
+                    </div>
+
+                    <!-- project 8( EVENT PAGE) -->
+                    <div class="border-2 border-black dark:border-white shadow-2xl rounded-2xl p-4 text-left  ">
+                        <h1 class="text-center text-4xl py-2 font-bold font-serif">Project 8</h1>
+
+                        <p class="text-xl py-2 font-semibold text-blue-500 py-2 "> <span class="font-mediu text-black dark:text-white">Website Name :-</span> Event Page</p>
+                        <p class="text-l py-2 font-light mb-1"> <span class="font-medium " >About Website :- </span> Designed a business-focused Event Page Website to help event organizers increase attendance, generate daily leads, build brand trust, and create additional revenue streams through online bookings and promotions.</p>
+                        <a href="#" class="text-shadow-fuchsia-600 hover:underline text-center w-40 px-4 py-1 border-2 bg-blue-950 dark:border-white rounded-2xl text-white">View Website > </a>
+                    </div>
+
+                    <!-- project 9( cOLLEGE EBSITE) -->
+                    <div class="border-2 border-black dark:border-white shadow-2xl rounded-2xl p-4 text-left  ">
+                        <h1 class="text-center text-4xl py-2 font-bold font-serif">Project 9</h1>
+
+                        <p class="text-xl py-2 font-semibold text-blue-500 py-2 "> <span class="font-mediu text-black dark:text-white">Website Name :-</span> College Website</p>
+                        <p class="text-l py-2 font-light mb-1"> <span class="font-medium " >About Website :- </span> Designed a business-focused College Website to help college administrators increase student enrollment, generate daily leads, build brand trust, and create additional revenue streams through online bookings and promotions.</p>
+                        <a href="#" class="text-shadow-gray-400 hover:underline text-center w-40 px-4 py-1 border-2 bg-blue-950 dark:border-white rounded-2xl text-white">View Website > </a>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+
+    <section id="contact" class="py-16 bg-gray-100  dark:bg-gray-800 shadow px-4 m-8 ">
+        <div class="container mx-auto px-4 text-center">
+
+                <h1 class="text-center text-4xl py-2 font-bold font-serif">Contact Me</h1>
+                
+                <p class="text-gray-600 dark:text-gray-300 mb-8">
+                Looking for a modern, high-performance website? I'm ready to help turn your ideas into reality.
+                </p>
+
+                <!-- Contact Buttons -->
+                <div class="flex flex-col sm:flex-row justify-center gap-4 mb-10">
+
+                <!-- Call Button -->
+                <a href="tel:7488426912"
+                    class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg transition">
+                    📞 Call Me
+                </a>
+
+                <!-- SMS Button -->
+                <a href="sms:7488426912"
+                    class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition">
+                    💬 Send Message
+                </a>
+
+                <!-- Gmail Button -->
+                <a href="mailto:sevakpatel032@gmail.com"
+                    class="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg transition">
+                    📧 Send Email
+                </a>
+
+                </div>
+
+                <!-- Optional Google Form Button -->
+                <a href="https://forms.gle/6gYqjm186Sxsjw9z9"
+                target="_blank"
+                class="inline-block bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition">
+                Fill Project Form
+                </a>
+
+        </div>
+    </section>
+
+     <footer class="bg-black  text-white px-4 m-8">
+            <div class="container mx-auto px-4 text-center shadow-2xl">
+
+                <h2 class="text-2xl font-bold mb-2">Sevak Patel</h2>
+                <p class="text-gray-400 mb-4">
+                    Frontend Developer | Full Stack Enthusiast | Building Modern Web Experiences
+                </p>
+
+                <!-- Social Links -->
+                <div class="flex justify-center gap-6 mb-4">
+                    <a href="https://github.com/sevak032" target="_blank" 
+                    class="hover:text-gray-400 transition">GitHub</a>
+
+                    <a href="https://www.linkedin.com/in/sevak-patel-b311a037a/" target="_blank" 
+                    class="hover:text-gray-400 transition">LinkedIn</a>
+
+                    <a href="mailto:sevakpatel032@gmail.com" 
+                    class="hover:text-gray-400 transition">Email</a>
+                </div>
+
+                <!-- Copyright -->
+                <p class="text-gray-500 text-sm">
+                    © 2026 Sevak Patel. All Rights Reserved.
+                </p>
+
+            </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <!-- JS -->
+    <script>
+        // Hamburger Menu
+        const hamburger = document.getElementById("hamburger");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        hamburger.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+
+        // Dark Mode Toggle
+        const darkToggle = document.getElementById("darkToggle");
+        const html = document.documentElement;
+
+        // Page load par check
+        if (localStorage.theme === "dark") {
+            html.classList.add("dark");
+            darkToggle.textContent = "☀️";
+        }
+
+        darkToggle.addEventListener("click", () => {
+            html.classList.toggle("dark");
+
+            const isDark = html.classList.contains("dark");
+            darkToggle.textContent = isDark ? "☀️" : "🌙";
+            localStorage.theme = isDark ? "dark" : "light";
+        });
+    </script>
+
+</body>
+</html>
